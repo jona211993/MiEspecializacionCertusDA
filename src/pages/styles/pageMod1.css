@@ -1,0 +1,33 @@
+.cont-wraper{
+    margin: 1em;   
+    >h3{
+        margin: 1rem;
+        color: rgb(5, 5, 109);
+    };
+
+    >p{
+        text-align: justify;
+        margin: 1em;
+    };
+
+    >h4{
+        margin: 1em;
+        
+    }
+
+}
+.cont-titulo{
+    background-color: rgb(8, 51, 99);
+    opacity: 0.9;
+    color: aliceblue;
+    width: 100%;
+    padding: 1em;
+    border-radius: 25px;
+}
+.contenedor-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}

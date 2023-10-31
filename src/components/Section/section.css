@@ -1,0 +1,33 @@
+.cont-presentacion{
+    margin: 2em;
+}
+
+.cont-presentacion p{
+    margin: 1em;
+    text-align: justify;
+}
+
+.cont-temas{
+    margin: 2em;
+}
+
+.cont-temas ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;     
+    
+    
+}
+.cont-temas ul li span{
+    font-weight: bold;
+}
+.cont-temas ul li a{
+    margin: 0.8em;
+    text-decoration: none;
+    color: black;
+}
+.cont-temas ul li a:hover{
+    color: rgb(24, 115, 190);
+    font-weight: bold;    
+   
+}
