@@ -6,7 +6,7 @@ function Section() {
   return (
     <>
     <div className="cont-presentacion">
-      <h1>Bienvenido (a)</h1>
+      <h2>Bienvenido (a)</h2>
       <p>
         ¡Saludos a todos los entusiastas del análisis de datos y bienvenidos a
         mi blog! Aquí compartiré mi emocionante viaje de aprendizaje y
@@ -17,7 +17,7 @@ function Section() {
       </p>
     </div>
     <div className="cont-temas">
-        <h1>Módulos</h1>
+        <h2>Módulos</h2>
         
         <ul>
             <li>

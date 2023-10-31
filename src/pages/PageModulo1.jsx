@@ -27,6 +27,13 @@ function PageModulo1() {
             src="https://i.postimg.cc/5y3Gxwsd/diagrama1.jpg"
             />            
         </div>
+        <h4>Caso 2: Venta de Productos</h4>
+        <div className="contenedor-img">
+            <Image
+            width={500}
+            src="https://i.postimg.cc/65Q1qF22/diagrama2.jpg"
+            />            
+        </div>
       </div>
     </>
   );
