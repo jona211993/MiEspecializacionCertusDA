@@ -23,21 +23,21 @@ function PageModulo1() {
         <h4>Caso 1: Caso de Reserva de Vehículos</h4>
         <div className="contenedor-img">
             <Image
-            width={500}
+            width={300}
             src="https://i.postimg.cc/5y3Gxwsd/diagrama1.jpg"
             />            
         </div>
         <h4>Caso 2: Venta de Productos</h4>
         <div className="contenedor-img">
             <Image
-            width={500}
+            width={300}
             src="https://i.postimg.cc/65Q1qF22/diagrama2.jpg"
             />            
         </div>
         <h4>Caso 3: Empresa Memory Kings</h4>
         <div className="contenedor-img">
             <Image
-            width={600}
+            width={300}
             src="https://i.postimg.cc/6pqrYWys/diagrama3.jpg"
             />            
         </div>
@@ -47,7 +47,7 @@ function PageModulo1() {
         <h5>Modelo Lógico</h5>
         <div className="contenedor-img">
             <Image
-            width={600}
+            width={300}
             src="https://i.postimg.cc/d1mfY2rZ/modelologico-fc.jpg"
             />            
         </div>
@@ -55,26 +55,28 @@ function PageModulo1() {
         <h5>Modelo Físico</h5>
         <div className="contenedor-img">
             <Image
-            width={600}
+            width={300}
             src="https://i.postimg.cc/TPcj2CNx/modelofisico-fc.jpg"
             />            
         </div>
         <h4>Ticket de Compra</h4>
+        <div className="cont-foto">
+        <img className="foto-ticket" src="https://i.postimg.cc/FHjX5M6Z/img-ticket.jpg" >
+        </img>
+        </div>
         <h5>Modelo Lógico</h5>
         <div className="contenedor-img">
             <Image
-            width={600}
+            width={300}
             src="https://i.postimg.cc/dtY9Ng8v/modlog2.jpg"
             />            
         </div>
         <br />
         <h5>Modelo Físico</h5>
-        <div className="contenedor-img">
-            <img className="foto-ticket" src="https://i.postimg.cc/FHjX5M6Z/img-ticket.jpg" >
-            </img>
-            <br />
+        <div className="contenedor-img">         
+           
             <Image
-            width={600}
+            width={300}
             src="https://i.postimg.cc/QCsWSGvy/modfis2.jpg"
             />            
         </div>
