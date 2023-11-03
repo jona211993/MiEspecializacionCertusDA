@@ -10,7 +10,7 @@ function PageModulo1() {
         <div className="cont-titulo">
           <h1>Base de Datos con MS SQL Server 2019</h1>
         </div>
-        <h3>Tema 1: SQL: Modelamiento de base de datos</h3>
+        <h2>Tema 1: SQL: Modelamiento de base de datos</h2>
         <p>
           Al finalizar esta sesión, conocí la importancia de una base de datos
           en una organización y la arquitectura de la misma. Comprendí la
@@ -18,7 +18,7 @@ function PageModulo1() {
           organización, así como definir las diferencias de cada modelo . Para
           hacer los diagramas usamos la herramienta Erwin.
         </p>
-        <h4>Ejercicios Prácticos de Clase</h4>
+        <h3>Ejercicios Prácticos de Clase - Modelo Lógico</h3>
         <p>Modelar los siguientes casos:</p>
         <h4>Caso 1: Caso de Reserva de Vehículos</h4>
         <div className="contenedor-img">
@@ -32,6 +32,50 @@ function PageModulo1() {
             <Image
             width={500}
             src="https://i.postimg.cc/65Q1qF22/diagrama2.jpg"
+            />            
+        </div>
+        <h4>Caso 3: Empresa Memory Kings</h4>
+        <div className="contenedor-img">
+            <Image
+            width={600}
+            src="https://i.postimg.cc/6pqrYWys/diagrama3.jpg"
+            />            
+        </div>
+        <br />
+        <h3>Ejercicios de Clase - Normalización y Modelo Físico </h3>
+        <h4>Factura de Compra</h4>
+        <h5>Modelo Lógico</h5>
+        <div className="contenedor-img">
+            <Image
+            width={600}
+            src="https://i.postimg.cc/d1mfY2rZ/modelologico-fc.jpg"
+            />            
+        </div>
+        <br />
+        <h5>Modelo Físico</h5>
+        <div className="contenedor-img">
+            <Image
+            width={600}
+            src="https://i.postimg.cc/TPcj2CNx/modelofisico-fc.jpg"
+            />            
+        </div>
+        <h4>Ticket de Compra</h4>
+        <h5>Modelo Lógico</h5>
+        <div className="contenedor-img">
+            <Image
+            width={600}
+            src="https://i.postimg.cc/dtY9Ng8v/modlog2.jpg"
+            />            
+        </div>
+        <br />
+        <h5>Modelo Físico</h5>
+        <div className="contenedor-img">
+            <img className="foto-ticket" src="https://i.postimg.cc/FHjX5M6Z/img-ticket.jpg" >
+            </img>
+            <br />
+            <Image
+            width={600}
+            src="https://i.postimg.cc/QCsWSGvy/modfis2.jpg"
             />            
         </div>
       </div>
