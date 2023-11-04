@@ -1,11 +1,25 @@
 .cont-presentacion{
-    margin: 2em;
+    margin: 3em 0;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .cont-presentacion p{
     margin: 1em;
     text-align: justify;
 }
+
+.wraper-temas{
+    display: flex;
+    flex-direction: row;
+    /* background-color: #CECFC9; */
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
 
 .cont-temas{
     margin: 2em;
@@ -30,4 +44,15 @@
     color: rgb(24, 115, 190);
     font-weight: bold;    
    
+}
+.cont-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    
+}
+.cont-img-animada{
+    width: 80%;    
+    
 }
