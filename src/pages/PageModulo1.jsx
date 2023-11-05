@@ -1,4 +1,6 @@
 import { useRef, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import lottie from "lottie-web";
 import { Image } from "antd";
 import NavBar from "../components/NavBar/NavBar";
@@ -18,12 +20,15 @@ function PageModulo1() {
       animationData: noteData, // the path to the animation json
     });
   }, []);
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <>
       <NavBar></NavBar>
       <div className="cont-wraper">
-        <div className="cont-titulo">
+        <div data-aos="flip-up" data-aos-duration="2000" className="cont-titulo">
           <h1>Base de Datos con MS SQL Server 2019</h1>
         </div>
         <h2>Tema 1: SQL: Modelamiento de base de datos</h2>
@@ -43,7 +48,7 @@ function PageModulo1() {
         </div>
         <h3>Ejercicios Prácticos de Clase - Modelo Lógico</h3>
         <p>Modelar los siguientes casos:</p>
-        <div className="cont-cardImg">
+        <div className="cont-cardImg" data-aos="fade-right" data-aos-duration="1500">
           <CardImg
             title="Caso 1: Caso de Reserva de Vehículos"
             ancho={300}
@@ -63,37 +68,43 @@ function PageModulo1() {
         <br />
         <h3>Ejercicios de Clase - Normalización y Modelo Físico </h3>
         <h4>Factura de Compra</h4>
-        <h5>Modelo Lógico</h5>
-        <div className="contenedor-img">
-          <Image
-            width={300}
-            src="https://i.postimg.cc/d1mfY2rZ/modelologico-fc.jpg"
-          />
+        <div className="cont-cardImg" data-aos="fade-left" data-aos-duration="1500">
+          <CardImg
+            title="Factura"
+            ancho={300}
+            url_img={"https://i.postimg.cc/mDxv6y6X/factura.png"}
+          ></CardImg>
+          <CardImg
+            title="Modelo Lógico"
+            ancho={300}
+            url_img={"https://i.postimg.cc/d1mfY2rZ/modelologico-fc.jpg"}
+          ></CardImg>
+          <CardImg
+            title="Modelo Físico"
+            ancho={300}
+            url_img={"https://i.postimg.cc/TPcj2CNx/modelofisico-fc.jpg"}
+          ></CardImg>
         </div>
-        <br />
-        <h5>Modelo Físico</h5>
-        <div className="contenedor-img">
-          <Image
-            width={300}
-            src="https://i.postimg.cc/TPcj2CNx/modelofisico-fc.jpg"
-          />
-        </div>
+        
         <h4>Ticket de Compra</h4>
-        <div className="cont-foto">
-          <img
-            className="foto-ticket"
-            src="https://i.postimg.cc/FHjX5M6Z/img-ticket.jpg"
-          ></img>
+        <div className="cont-cardImg" data-aos="fade-right" data-aos-duration="1500">
+          <CardImg
+            title="Ticket"
+            ancho={300}
+            url_img={"https://i.postimg.cc/FHjX5M6Z/img-ticket.jpg"}
+          ></CardImg>
+          <CardImg
+            title="Modelo Lógico"
+            ancho={300}
+            url_img={"https://i.postimg.cc/dtY9Ng8v/modlog2.jpg"}
+          ></CardImg>
+          <CardImg
+            title="Modelo Físico"
+            ancho={300}
+            url_img={"https://i.postimg.cc/QCsWSGvy/modfis2.jpg"}
+          ></CardImg>
         </div>
-        <h5>Modelo Lógico</h5>
-        <div className="contenedor-img">
-          <Image width={300} src="https://i.postimg.cc/dtY9Ng8v/modlog2.jpg" />
-        </div>
-        <br />
-        <h5>Modelo Físico</h5>
-        <div className="contenedor-img">
-          <Image width={300} src="https://i.postimg.cc/QCsWSGvy/modfis2.jpg" />
-        </div>
+       
       </div>
       <MyFooter></MyFooter>
     </>
