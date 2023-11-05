@@ -2,6 +2,8 @@ import React, { useRef, useEffect} from "react";
 import { Link } from "react-router-dom";
 import lottie from 'lottie-web';
 import noteData from '../../assets/lotties/dataanimacion.json';
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./section.css";
 
 function Section() {
@@ -17,13 +19,15 @@ function Section() {
     }); 
    
   }, []);
-  
-
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
 
   return (
     <>
-      <div className="cont-presentacion">
+      <div className="cont-presentacion" data-aos="fade-up"
+     data-aos-duration="3000">
         <h2>Bienvenido (a)</h2>
         <p>
           ¡Saludos a todos los entusiastas del análisis de datos y bienvenidos a
@@ -34,7 +38,8 @@ function Section() {
           documentar mis experiencias, éxitos y desafíos a lo largo del camino!
         </p>
       </div>
-      <div className="wraper-temas">
+      <div className="wraper-temas" data-aos="fade-up"
+     data-aos-duration="3000">
         <div className="cont-temas">
           <h2>Módulos</h2>
           <ul>

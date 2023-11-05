@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import { useEffect } from "react";
 import { Layout, Menu } from "antd";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -21,9 +21,7 @@ function NavBar() {
     Aos.init();
   }, []);
   return (
-    <div data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="1000">
+    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
       <Layout className="layout">
         <Header
           style={{
@@ -33,7 +31,7 @@ function NavBar() {
           }}
         >
           <div className="demo-logo">
-            <h3 style={{ color: "#fff", margin: "0px", width: "300px" }}>
+            <h3 style={{ color: "#fff", margin: "0px", width: "350px" }}>
               Especialización en Data Analytics
             </h3>
           </div>

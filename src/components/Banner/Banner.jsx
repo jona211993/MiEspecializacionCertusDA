@@ -6,7 +6,6 @@ function Banner() {
   return (
     <Carousel autoplay>
       <div className="cont-img"></div>
-
       <div className="cont-img2"></div>
     </Carousel>
   );

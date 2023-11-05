@@ -8,7 +8,8 @@ function MyFooter() {
         style={{
           textAlign: 'center',
           background: '#0A3143',
-          color: 'white'
+          color: 'white',
+          fontWeight: '700'
         }}
       >
         ©2023 Created by  JP
