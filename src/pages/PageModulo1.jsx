@@ -161,7 +161,7 @@ function PageModulo1() {
 
           <div className="cont-img-sqlserver"></div>
         </div>
-        <h3>Ejercicios Prácticos de Clase - Modelo Lógico</h3>
+        <h3>Ejercicios Prácticos de Clase</h3>
         <p>Modelar el Caso de Memory kings</p>
         <div
           className="cont-cardImg"
