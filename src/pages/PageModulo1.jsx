@@ -1,7 +1,8 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import NavBar from "../components/NavBar/NavBar";
 import CardImg from "../components/CardImg/CardImg";
 import MyFooter from "../components/Footer/Footer";
+import { Pagination } from "antd";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import lottie from "lottie-web";
@@ -9,6 +10,23 @@ import noteData from "../assets/lotties/dbanimacion.json";
 import "./styles/pageMod1.css";
 
 function PageModulo1() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+  const renderPageContent = () => {
+    switch (currentPage) {
+      case 1:
+        return <Page1Content />;
+      case 2:
+        return <Page2Content />;
+      // Agrega más casos según sea necesario
+
+      default:
+        return null;
+    }
+  };
+
   const container = useRef(null);
   useEffect(() => {
     lottie.loadAnimation({
@@ -23,9 +41,8 @@ function PageModulo1() {
     Aos.init();
   }, []);
 
-  return (
-    <>
-      <NavBar></NavBar>
+  const Page1Content = () => {
+    return (
       <div className="cont-wraper">
         <div
           data-aos="flip-up"
@@ -118,6 +135,65 @@ function PageModulo1() {
             url_img={"https://i.postimg.cc/QCsWSGvy/modfis2.jpg"}
           ></CardImg>
         </div>
+      </div>
+    );
+  };
+
+  const Page2Content = () => {
+    return (
+      <div className="cont-wraper">
+        <div
+          data-aos="flip-up"
+          data-aos-duration="2000"
+          className="cont-titulo"
+        >
+          <h1>Base de Datos con MS SQL Server 2019</h1>
+        </div>
+        <h2>Tema 2: SQL Server Básico</h2>
+        <div className="cont-intro-tema">
+          <div className=" cont-texto">
+            <p>
+              Al finalizar este tema se espera comprender las sentencias para la
+              creación de una base de datos e inserción se datos en la misma.
+              Asi como otras operaciones en el motor de base de datos.
+            </p>
+          </div>
+
+          <div className="cont-img-sqlserver"></div>
+        </div>
+        <h3>Ejercicios Prácticos de Clase - Modelo Lógico</h3>
+        <p>Modelar el Caso de Memory kings</p>
+        <div
+          className="cont-cardImg"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <CardImg
+            title="Las Tablas creadas en SQLServerManagementStudio"
+            ancho={300}
+            url_img={"https://i.postimg.cc/sXn3K3YK/tablas-memory-K.jpg"}
+          ></CardImg>
+          <CardImg
+            title="Diagrama en SQLServerManagementStudio"
+            ancho={300}
+            url_img={"https://i.postimg.cc/QCFVTfB6/Diagrama-memory-K.jpg"}
+          ></CardImg>
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <>
+      <NavBar></NavBar>
+      {renderPageContent()}
+      <div className="content-paginacion">
+        <Pagination
+          current={currentPage}
+          total={2} // Número total de páginas
+          pageSize={1} // Cantidad de páginas a mostrar en cada página
+          onChange={handlePageChange}
+        />
       </div>
       <MyFooter></MyFooter>
     </>
